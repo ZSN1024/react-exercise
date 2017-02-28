@@ -27,14 +27,37 @@ export default class List extends React.Component {
 
     constructor(props) {
         super(props);
-
+        let checked = [];
+        for (let i=0; i<recruitItems.length; i++) {
+            let length = recruitItems[i].jobList.length;
+            let arr = [];
+            for (let j=0; j<length; j++) {
+                arr[j] = false;
+            }
+            checked.push(arr);
+        }
+        this.state = {checked:checked};
     }
+    updateState = (index,arr)=> {
+        this.setState(update(this.state, {checked: {[index]: {$apply:x=>arr}}}));
+    };
+    handleEmpty = ()=> {
+        let checked = [];
+        for (let i=0; i<this.state.checked.length; i++) {
+            let arr = this.state.checked[i];
+            for (let j=0; j<arr.length; j++) {
+                arr[j] = false;
+            }
+            checked.push(arr);
+        }
+        this.setState({checked:checked});
+    };
 
     render() {
         return (
             <div className="JobList-container">
-                <p className="Job-header">招聘职位<span >清空</span></p>
-                <Department items={recruitItems}/>
+                <p className="Job-header">招聘职位<span  onClick={this.handleEmpty}>清空</span></p>
+                <Department items={recruitItems} updateState={this.updateState} checked={this.state.checked}/>
             </div>
         );
     }
