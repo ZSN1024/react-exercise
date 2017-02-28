@@ -1,0 +1,43 @@
+{
+  "parser": "babel-eslint",
+  "rules": {
+    "no-var": "error",
+    "no-alert": "error",
+    "no-unreachable": "error",
+    "no-cond-assign": "error",
+    "no-constant-condition": "error",
+    "no-dupe-args": "error",
+    "no-dupe-keys": "error",
+    "no-duplicate-case": "error",
+    "no-unsafe-negation": "error",
+    "no-sparse-arrays": "error",
+    "no-unexpected-multiline": "error",
+    "no-unsafe-finally": "error",
+    "no-case-declarations": "error",
+    "no-floating-decimal": "error",
+    "no-implicit-coercion": "error",
+    "no-new-wrappers": "error",
+    "no-redeclare": "error",
+    "no-unmodified-loop-condition": "error",
+    "no-useless-concat": "error",
+    "no-with": "error",
+    "no-this-before-super": "error",
+
+    "array-callback-return": "error",
+    "consistent-return": "error",
+    "default-case": "error",
+    "valid-typeof": "error",
+    "eqeqeq": ["error", "always"],
+
+    "no-extra-boolean-cast": "warn",
+    "no-extra-semi": "warn",
+    "no-inner-declarations": "warn",
+    "no-template-curly-in-string": "warn",
+    "no-empty-function": "warn",
+    "no-useless-return": "warn",
+    "no-duplicate-imports": "warn",
+    "guard-for-in": "warn",
+    "arrow-spacing": "warn",
+    "no-debugger": "warn"
+  }
+}

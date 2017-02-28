@@ -1,0 +1,14 @@
+{
+  "rules": {
+    "color-hex-case": "lower",
+    "color-no-invalid-hex": true,
+
+    "number-leading-zero": "always",
+    "length-zero-no-unit": true,
+
+    "block-no-empty": true,
+    "block-opening-brace-space-before": "always",
+    "declaration-colon-space-after": "always",
+    "rule-nested-empty-line-before": "always"
+  }
+}
