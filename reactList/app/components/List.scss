@@ -1,26 +1,66 @@
-.calen-box {
-  width: 100%;
-  height: 100%;
-  margin-top: 10px;
 
-  .every {
+.JobList-container {
+  width: 525px;
+  padding: 0 20px;
+  padding-left: 48px;
+  background: #617d8c;
+  color: #c0cbd0;
+  overflow: hidden;
+  margin: 20px auto;
+
+  .Job-header {
     width: 100%;
-    height: 48%;
-  }
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+    margin-bottom: 33px;
+    font-size: 16px;
 
-  .signle-box {
-    width: 47%;
-    height: 100%;
-    border: 1px solid black;
-
-    .calen-left {
-      width: 30%;
-      height: 100%;
-      border-right: 1px solid black;
+    span {
+      cursor: pointer;
     }
 
-    .calen-right {
-      width: 80%;
+    p {
+      font-size: 18px;
+      margin-right: 336px;
+    }
+  }
+
+  .department {
+    font-size: 14px;
+
+    .department-name {
+      margin-right: 394px;
+      margin-left: 10px;
+      color: white;
+    }
+  }
+
+
+
+  .total-num {
+    color: white;
+    display: inline-block;
+    padding: 3px 5px;
+    border-radius: 10px;
+    background-color: #516a76;
+    margin-right: -10px;
+  }
+
+  .job-list {
+    margin-left: 23px;
+
+    li {
+      width: 100%;
+      margin: 17px 0;
+    }
+
+    .job-name {
+      margin-left: 20px;
+    }
+
+    .job-num {
+      float: right;
     }
 
   }

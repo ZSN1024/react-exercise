@@ -55,6 +55,7 @@
     "decimal.js": "^7.1.0",
     "intl": "^1.2.5",
     "react": "^15.4.1",
+    "react-addons-update": "^15.4.2",
     "react-cookie": "^1.0.4",
     "react-dom": "^15.4.1",
     "react-intl": "^2.2.2",
